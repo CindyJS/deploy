@@ -1,5 +1,7 @@
-/* CindyJS - (C) 2014-2015  J. Richter-Gebert
- *
+/* CindyJS - (C) 2014-2015  The CindyJS Project
+ * Mostly licensed under the Apache License 2.0, but subprojects may use different licensing.
+ * See https://github.com/CindyJS/CindyJS/tree/7f81300c03ac57733611a0a3ff83afe3aebd9e33
+ * for corresponding sources and their respective licensing conditions.
  */
 'use strict';var numeric="undefined"===typeof exports?function(){}:exports;"undefined"!==typeof global&&(global.numeric=numeric);numeric.version="1.2.6";numeric.bench=function(a,b){var d,c,l;"undefined"===typeof b&&(b=15);l=.5;for(d=new Date;;){for(c=l*=2;3<c;c-=4)a(),a(),a(),a();for(;0<c;)a(),c--;c=new Date;if(c-d>b)break}for(c=l;3<c;c-=4)a(),a(),a(),a();for(;0<c;)a(),c--;c=new Date;return 1E3*(3*l-1)/(c-d)};
 numeric._myIndexOf=function(a){var b=this.length,d;for(d=0;d<b;++d)if(this[d]===a)return d;return-1};numeric.myIndexOf=Array.prototype.indexOf?Array.prototype.indexOf:numeric._myIndexOf;numeric.Function=Function;numeric.precision=4;numeric.largeArray=50;
