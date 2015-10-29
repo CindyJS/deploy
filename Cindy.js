@@ -1,6 +1,6 @@
 /* CindyJS - (C) 2014-2015  The CindyJS Project
  * Mostly licensed under the Apache License 2.0, but subprojects may use different licensing.
- * See https://github.com/CindyJS/CindyJS/tree/078352c7103a86ecab1334cc30d66e79d55a2baf
+ * See https://github.com/CindyJS/CindyJS/tree/c5187bd4405aab92f637e8a2492f46bcb2666d4d
  * for corresponding sources and their respective licensing conditions.
  */
 'use strict';var numeric="undefined"===typeof exports?function(){}:exports;"undefined"!==typeof global&&(global.numeric=numeric);numeric.version="1.2.6";numeric.bench=function(a,b){var d,c,l;"undefined"===typeof b&&(b=15);l=.5;for(d=new Date;;){for(c=l*=2;3<c;c-=4)a(),a(),a(),a();for(;0<c;)a(),c--;c=new Date;if(c-d>b)break}for(c=l;3<c;c-=4)a(),a(),a(),a();for(;0<c;)a(),c--;c=new Date;return 1E3*(3*l-1)/(c-d)};
