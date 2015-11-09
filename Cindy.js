@@ -1,6 +1,6 @@
 /* CindyJS - (C) 2014-2015  The CindyJS Project
  * Mostly licensed under the Apache License 2.0, but subprojects may use different licensing.
- * See https://github.com/CindyJS/CindyJS/tree/42825b928df2852ac7a2dd0c69f22394c1fea7ae
+ * See https://github.com/CindyJS/CindyJS/tree/a5d051a1a7d8d2fd08e5493a4240d7e6d436cf8c
  * for corresponding sources and their respective licensing conditions.
  */
 'use strict';(function(){function n(b,c,d){f.biginteger_used=1;null!=b&&("number"==typeof b&&"undefined"==typeof c?this.fromInt(b):"number"==typeof b?this.fromNumber(b,c,d):null==c&&"string"!=typeof b?this.fromString(b,256):this.fromString(b,c))}function F(){return new n(null)}function ja(b,c,d,g,f,l){for(;0<=--l;){var p=c*this[b++]+d[g]+f;f=Math.floor(p/67108864);d[g++]=p&67108863}return f}function Ka(b,c,d,g,f,l){var p=c&32767;for(c>>=15;0<=--l;){var H=this[b]&32767,t=this[b++]>>15,D=c*H+t*p,H=
