@@ -1,0 +1,46 @@
+.CindyJS-widget {
+  overflow: hidden;
+  z-index: 0; }
+  .CindyJS-widget canvas {
+    z-index: 1; }
+  .CindyJS-widget .CindyJS-baseline {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    position: absolute;
+    white-space: nowrap;
+    margin-top: -1000px; }
+    .CindyJS-widget .CindyJS-baseline img {
+      margin: 0px;
+      padding: 0px;
+      border: none;
+      display: inline;
+      position: static;
+      vertical-align: baseline;
+      visibility: hidden;
+      margin-right: -1px; }
+    .CindyJS-widget .CindyJS-baseline .CindyJS-button {
+      position: relative;
+      display: inline-block;
+      z-index: 2; }
+  .CindyJS-widget .CindyJS-button input[type=checkbox] {
+    position: absolute;
+    left: -10000px; }
+  .CindyJS-widget .CindyJS-button button, .CindyJS-widget .CindyJS-button label {
+    margin: -6px -7px;
+    padding: 5px 6px;
+    border-radius: 4px;
+    background-color: #bfc4d0;
+    border: 1px solid #d0d0d0;
+    box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa;
+    outline: none; }
+  .CindyJS-widget .CindyJS-button button:focus, .CindyJS-widget .CindyJS-button input[type=checkbox]:focus + label {
+    box-shadow: 0px 0px 3px #06f, inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa; }
+  .CindyJS-widget .CindyJS-button button:active, .CindyJS-widget .CindyJS-button input[type=checkbox]:checked + label {
+    background-color: #aaafbb;
+    box-shadow: inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
+  .CindyJS-widget .CindyJS-button button:focus:active, .CindyJS-widget .CindyJS-button input[type=checkbox]:focus:checked + label {
+    background-color: #aaafbb;
+    box-shadow: 0px 0px 3px #06f, inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
+
+/*# sourceMappingURL=CindyJS.css.map */
