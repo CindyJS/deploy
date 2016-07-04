@@ -1,3 +1,26 @@
+.CindyJS-toolbar button, .CindyJS-animcontrols button, .CindyJS-button button, .CindyJS-button label {
+  background-color: #bfc4d0;
+  border: 1px solid #d0d0d0;
+  box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa;
+  outline: none; }
+
+.CindyJS-toolbar button:active, .CindyJS-animcontrols button:active, .CindyJS-toolbar button.CindyJS-active, .CindyJS-animcontrols button.CindyJS-active, .CindyJS-button button:active, .CindyJS-button label:active, .CindyJS-button input[type=checkbox]:checked + label {
+  background-color: #aaafbb;
+  box-shadow: inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
+
+.CindyJS-toolbar, .CindyJS-animcontrols {
+  line-height: 0px; }
+  .CindyJS-toolbar button, .CindyJS-animcontrols button {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px; }
+  .CindyJS-toolbar button:focus, .CindyJS-animcontrols button:focus {
+    border-color: #06f; }
+  .CindyJS-toolbar img, .CindyJS-animcontrols img {
+    margin: 0px;
+    border: none;
+    display: block; }
+
 .CindyJS-widget {
   overflow: hidden;
   z-index: 0; }
@@ -10,7 +33,7 @@
     position: absolute;
     white-space: nowrap;
     margin-top: -1000px; }
-    .CindyJS-widget .CindyJS-baseline img {
+    .CindyJS-widget .CindyJS-baseline > img {
       margin: 0px;
       padding: 0px;
       border: none;
@@ -20,52 +43,34 @@
       visibility: hidden;
       margin-right: -1px; }
     .CindyJS-widget .CindyJS-baseline .CindyJS-button {
-      position: relative;
-      display: inline-block;
-      z-index: 2; }
-  .CindyJS-widget .CindyJS-button input[type=checkbox] {
-    position: absolute;
-    left: -10000px; }
-  .CindyJS-widget .CindyJS-button button, .CindyJS-widget .CindyJS-button label {
-    margin: -6px -7px;
-    padding: 5px 6px;
-    border-radius: 4px;
-    background-color: #bfc4d0;
-    border: 1px solid #d0d0d0;
-    box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa;
-    outline: none; }
-  .CindyJS-widget .CindyJS-button button:focus, .CindyJS-widget .CindyJS-button input[type=checkbox]:focus + label {
-    box-shadow: 0px 0px 3px #06f, inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa; }
-  .CindyJS-widget .CindyJS-button button:active, .CindyJS-widget .CindyJS-button input[type=checkbox]:checked + label {
-    background-color: #aaafbb;
-    box-shadow: inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
-  .CindyJS-widget .CindyJS-button button:focus:active, .CindyJS-widget .CindyJS-button input[type=checkbox]:focus:checked + label {
-    background-color: #aaafbb;
-    box-shadow: 0px 0px 3px #06f, inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
-  .CindyJS-widget .CindyJS-toolbar {
+      display: inline-block; }
+  .CindyJS-widget .CindyJS-button {
+    position: relative;
+    z-index: 2; }
+  .CindyJS-widget .CindyJS-toolbar, .CindyJS-widget .CindyJS-animcontrols {
     position: absolute; }
-    .CindyJS-widget .CindyJS-toolbar button {
+    .CindyJS-widget .CindyJS-toolbar button, .CindyJS-widget .CindyJS-animcontrols button {
       position: relative;
       z-index: 3; }
+  .CindyJS-widget .CindyJS-animcontrols {
+    bottom: 5px;
+    left: 5px; }
 
-.CindyJS-toolbar button {
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-  border-radius: 0px;
-  background-color: #bfc4d0;
-  border: 1px solid #d0d0d0;
-  box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa;
-  outline: none; }
+.CindyJS-button input[type=checkbox] {
+  position: absolute;
+  left: -10000px; }
 
-.CindyJS-toolbar button.CindyJS-active, .CindyJS-toolbar button:active {
-  box-shadow: inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
+.CindyJS-button button, .CindyJS-button label {
+  margin: -6px -7px;
+  padding: 5px 6px;
+  border-radius: 4px; }
 
-.CindyJS-toolbar button:focus {
-  border-color: #06f; }
+.CindyJS-button button:focus, .CindyJS-button input[type=checkbox]:focus + label {
+  box-shadow: 0px 0px 3px #06f, inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa; }
 
-.CindyJS-toolbar img {
-  display: block; }
+.CindyJS-button button:focus:active, .CindyJS-button input[type=checkbox]:focus:checked + label {
+  background-color: #aaafbb;
+  box-shadow: 0px 0px 3px #06f, inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
 
 .CindyJS-toolbar div {
   line-height: 0px; }
@@ -76,5 +81,8 @@
   padding: 1px;
   width: 32px;
   height: 24px; }
+
+.CindyJS-animcontrols button {
+  border-radius: 4px; }
 
 /*# sourceMappingURL=CindyJS.css.map */
