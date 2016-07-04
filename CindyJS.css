@@ -42,5 +42,39 @@
   .CindyJS-widget .CindyJS-button button:focus:active, .CindyJS-widget .CindyJS-button input[type=checkbox]:focus:checked + label {
     background-color: #aaafbb;
     box-shadow: 0px 0px 3px #06f, inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
+  .CindyJS-widget .CindyJS-toolbar {
+    position: absolute; }
+    .CindyJS-widget .CindyJS-toolbar button {
+      position: relative;
+      z-index: 3; }
+
+.CindyJS-toolbar button {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  background-color: #bfc4d0;
+  border: 1px solid #d0d0d0;
+  box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa;
+  outline: none; }
+
+.CindyJS-toolbar button.CindyJS-active, .CindyJS-toolbar button:active {
+  box-shadow: inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
+
+.CindyJS-toolbar button:focus {
+  border-color: #06f; }
+
+.CindyJS-toolbar img {
+  display: block; }
+
+.CindyJS-toolbar div {
+  line-height: 0px; }
+
+.CindyJS-toolbar span.CindyJS-spacer {
+  display: inline-block;
+  margin: 0px;
+  padding: 1px;
+  width: 32px;
+  height: 24px; }
 
 /*# sourceMappingURL=CindyJS.css.map */
