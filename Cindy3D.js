@@ -55,5 +55,5 @@ null))a.push(1),k.backgroundColor=a;return h});l("lookat3d",3,function(a){var b=
 1],g="camera";b(c,{position:function(a){return d=R(a,d)},diffuse:function(a){return e=W(a,e)},specular:function(a){return f=W(a,f)},frame:function(a){return g=Pa(a,g)}});J(k.A,a,new Ba[g](d,e,f));return h});l("directionallight3d",1,function(a,c){a=Y(m(a[0]),0);var d=[0,-1,0,0],e=[1,1,1],f=[1,1,1],g="camera";b(c,{direction:function(a){return d=Oa(a,d)},diffuse:function(a){return e=W(a,e)},specular:function(a){return f=W(a,f)},frame:function(a){return g=Pa(a,g)}});J(k.A,a,new Ba[g](d,e,f));return h});
 l("spotlight3d",1,function(a,c){a=Y(m(a[0]),0);var d=[0,0,0,1],e=[0,-1,0,0],f=Math.PI/4,g=0,l=[1,1,1],n=[1,1,1],A="camera";b(c,{position:function(a){return d=R(a,d)},direction:function(a){return e=Oa(a,e)},cutoffangle:function(a){return f=X(0,Math.PI,a,f)},exponent:function(a){return g=V(a,g)},diffuse:function(a){return l=W(a,l)},specular:function(a){return n=W(a,n)},frame:function(a){return A=Pa(a,A)}});J(k.A,a,new Ha[A](d,e,Math.cos(f),g,l,n));return h});l("disablelight3d",1,function(a){a=Y(m(a[0]),
 0);J(k.A,a,null);return h});l("ambientlight3d",1,function(a){if(a=W(m(a[0])))k.A.X=a;return h})});
-})();//# sourceMappingURL=Cindy3D.js.map
+}).call(this);//# sourceMappingURL=Cindy3D.js.map
 
