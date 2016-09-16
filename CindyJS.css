@@ -72,6 +72,13 @@
   background-color: #aaafbb;
   box-shadow: 0px 0px 3px #06f, inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
 
+.CindyJS-editabletext {
+  border: 1px solid #000;
+  margin: -4px -4px -1px;
+  padding: 4px 4px 1px; }
+  .CindyJS-editabletext:focus {
+    box-shadow: 0px 0px 3px #06f; }
+
 .CindyJS-toolbar div {
   line-height: 0px; }
 
