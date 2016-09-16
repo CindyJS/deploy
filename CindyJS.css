@@ -1,22 +1,22 @@
-.CindyJS-toolbar button, .CindyJS-animcontrols button, .CindyJS-button button, .CindyJS-button label {
+.CindyJS-toolbar button, .CindyJS-animbuttons button, .CindyJS-button button, .CindyJS-button label {
   background-color: #bfc4d0;
   border: 1px solid #d0d0d0;
   box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa;
   outline: none; }
 
-.CindyJS-toolbar button:active, .CindyJS-animcontrols button:active, .CindyJS-toolbar button.CindyJS-active, .CindyJS-animcontrols button.CindyJS-active, .CindyJS-button button:active, .CindyJS-button label:active, .CindyJS-button input[type=checkbox]:checked + label {
+.CindyJS-toolbar button:active, .CindyJS-animbuttons button:active, .CindyJS-toolbar button.CindyJS-active, .CindyJS-animbuttons button.CindyJS-active, .CindyJS-button button:active, .CindyJS-button label:active, .CindyJS-button input[type=checkbox]:checked + label {
   background-color: #aaafbb;
   box-shadow: inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
 
-.CindyJS-toolbar, .CindyJS-animcontrols {
+.CindyJS-toolbar, .CindyJS-animbuttons {
   line-height: 0px; }
-  .CindyJS-toolbar button, .CindyJS-animcontrols button {
+  .CindyJS-toolbar button, .CindyJS-animbuttons button {
     display: inline-block;
     margin: 0px;
     padding: 0px; }
-  .CindyJS-toolbar button:focus, .CindyJS-animcontrols button:focus {
+  .CindyJS-toolbar button:focus, .CindyJS-animbuttons button:focus {
     border-color: #06f; }
-  .CindyJS-toolbar img, .CindyJS-animcontrols img {
+  .CindyJS-toolbar img, .CindyJS-animbuttons img {
     margin: 0px;
     border: none;
     display: block; }
@@ -47,11 +47,14 @@
   .CindyJS-widget .CindyJS-button {
     position: relative;
     z-index: 2; }
-  .CindyJS-widget .CindyJS-toolbar, .CindyJS-widget .CindyJS-animcontrols {
+  .CindyJS-widget .CindyJS-toolbar, .CindyJS-widget .CindyJS-animbuttons {
     position: absolute; }
-    .CindyJS-widget .CindyJS-toolbar button, .CindyJS-widget .CindyJS-animcontrols button {
+    .CindyJS-widget .CindyJS-toolbar button, .CindyJS-widget .CindyJS-animbuttons button {
       position: relative;
       z-index: 3; }
+  .CindyJS-widget .CindyJS-animspeed {
+    position: relative;
+    z-index: 3; }
   .CindyJS-widget .CindyJS-animcontrols {
     bottom: 5px;
     left: 5px; }
@@ -89,7 +92,30 @@
   width: 32px;
   height: 24px; }
 
-.CindyJS-animcontrols button {
-  border-radius: 4px; }
+.CindyJS-animcontrols {
+  position: absolute;
+  background-color: #00f;
+  height: 36px;
+  width: 102px; }
+  .CindyJS-animcontrols .CindyJS-animspeed {
+    height: 10px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #ff7f7f;
+    box-shadow: inset 1px 1px 2px #999, inset -1px -1px 2px #ccc; }
+    .CindyJS-animcontrols .CindyJS-animspeed div {
+      width: 50%;
+      height: 100%;
+      border-radius: 4px;
+      background-color: #cc0000;
+      box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #aaa; }
+  .CindyJS-animcontrols .CindyJS-animbuttons {
+    white-space: nowrap; }
+
+.CindyJS-animbuttons button {
+  border-radius: 4px;
+  width: 34px;
+  height: 26px;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=CindyJS.css.map */
