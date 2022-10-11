@@ -44,8 +44,8 @@ function link() {
   {
     _dbglog: function (i, d) {
       console.log(i, d);
-    } },
-
+    }
+  },
   buffer);
 
 }
@@ -172,8 +172,8 @@ function next(d) {
       buffer: imgTransfer,
       imgPtr: 0,
       width,
-      height },
-
+      height
+    },
     [imgTransfer]);
 
   } else if (typeof createImageBitmap === "function") {
@@ -181,8 +181,8 @@ function next(d) {
       postMessage(
       {
         generation,
-        img: bmp },
-
+        img: bmp
+      },
       [bmp]);
 
     });
@@ -193,8 +193,8 @@ function next(d) {
       buffer,
       imgPtr,
       width,
-      height },
-
+      height
+    },
     [buffer]);
 
   }
@@ -215,25 +215,25 @@ Module["asm"] = function (global, env, buffer) {
     b = b | 0;
     e = e | 0;
     let f = 0,
-    g = 0,
-    i = 0,
-    j = 0.0,
-    k = 0.0,
-    l = 0,
-    m = 0,
-    n = 0.0,
-    o = 0.0,
-    p = 0.0,
-    q = 0.0,
-    r = 0,
-    s = 0.0,
-    t = 0.0,
-    u = 0.0,
-    v = 0.0,
-    w = 0.0,
-    x = 0.0,
-    y = 0,
-    z = 0;
+      g = 0,
+      i = 0,
+      j = 0.0,
+      k = 0.0,
+      l = 0,
+      m = 0,
+      n = 0.0,
+      o = 0.0,
+      p = 0.0,
+      q = 0.0,
+      r = 0,
+      s = 0.0,
+      t = 0.0,
+      u = 0.0,
+      v = 0.0,
+      w = 0.0,
+      x = 0.0,
+      y = 0,
+      z = 0;
     if (!b) return;
     f = c[11] | 0;
     do {
@@ -379,7 +379,7 @@ Module["asm"] = function (global, env, buffer) {
     p = +p;
     q = +q;
     let r = 0,
-    s = 0;
+      s = 0;
     a = 56 + (a * 56 | 0) + 52 | 0;
     s = c[(c[a >> 2] | 0) + (b << 2) >> 2] | 0;
     c[s + 4 >> 2] = 1;
@@ -424,7 +424,7 @@ Module["asm"] = function (global, env, buffer) {
     p = +p;
     q = +q;
     let r = 0,
-    s = 0;
+      s = 0;
     a = 56 + (a * 56 | 0) + 52 | 0;
     s = c[(c[a >> 2] | 0) + (b << 2) >> 2] | 0;
     c[s + 4 >> 2] = 0;
@@ -508,7 +508,7 @@ Module["asm"] = function (global, env, buffer) {
     _setIFS: fa,
     _real: da,
     _init: ea,
-    _setMoebius: ha };
-
+    _setMoebius: ha
+  };
 };
 //# sourceMappingURL=ifs.js.map
