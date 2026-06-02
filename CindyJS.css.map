@@ -1,7 +1,7 @@
 {"version":3,
  "file":"CindyJS.css",
- "sourceRoot":"https://raw.githubusercontent.com/CindyJS/CindyJS/f357bfafd643b00b01f00f4c3ceca56adf54432b/",
- "sources":["file:/Users/ulli/Documents/Versioned/CindyJS/src/scss/CindyJS.scss"],
+ "sourceRoot":"https://raw.githubusercontent.com/CindyJS/CindyJS/72f19cb6f01e8286da43401fbfa976146fdba1e0/",
+ "sources":["file:/home/runner/work/CindyJS/CindyJS/src/scss/CindyJS.scss"],
  "sourcesContent":[null],
  "names":[],
  "mappings":"AAoBA;AAAA;EACI;EACA;EACA,YAVY;EAWZ;;;AAGJ;AAAA;EACI;EACA,YAfa;;;AAkBjB;EACI;;AAEA;EAEI;EACA;EACA;;AAOJ;EACI;;AAGJ;EACI;EACA;EACA;;;AAOR;EACI;EACA;;AAEA;EACI;;AAGJ;EA5DA;EACA;EACA;EA4DI;EACA;EACA;;AAEA;EAlEJ;EACA;EACA;EAkEQ;EACA;EACA;EACA;EACA;;AAGJ;EACI;;AAIR;EACI;EACA;;AAGJ;EACI;;AACA;EACI;EACA;;AAIR;EACI;EACA;;AAGJ;EACI;EACA;;;AAKJ;EACI;EACA;;AAGJ;AAAA;EAGI;EACA;EACA;;AAGJ;AAAA;EAEI;;AAOJ;AAAA;EAEI;EACA;;;AAIR;EACI;EACA;EACA;;AAEA;EACI,YArIS;;;AA4Ib;EACI;;AAGJ;EACI;EACA;EACA;EACA;EACA;;;AAIR;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA,YArKS;;AAuKT;EACI;EACA;EACA;EACA;EACA,YA7KI;;AAiLZ;EACI;;;AAOJ;EACI;EACA;EACA;EACA"}
