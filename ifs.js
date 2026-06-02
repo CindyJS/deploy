@@ -40,14 +40,14 @@ onmessage = function (event) {
 
 function link() {
   asm = Module.asm(
-  self,
-  {
-    _dbglog: function (i, d) {
-      console.log(i, d);
-    } },
-
-  buffer);
-
+    self,
+    {
+      _dbglog: function (i, d) {
+        console.log(i, d);
+      }
+    },
+    buffer
+  );
 }
 
 function init(d) {
@@ -74,17 +74,17 @@ function init(d) {
   imgPtr = asm._init(numIFS, numTrafos, width, height);
   if (imgPtr !== fixedSize + ifsSize + trafoSize)
   throw Error(
-  "Buffer size calculation out of sync: expected " +
-  fixedSize +
-  " + " +
-  ifsSize +
-  " + " +
-  trafoSize +
-  " = " + (
-  fixedSize + ifsSize + trafoSize) +
-  " but got " +
-  imgPtr);
-
+    "Buffer size calculation out of sync: expected " +
+    fixedSize +
+    " + " +
+    ifsSize +
+    " + " +
+    trafoSize +
+    " = " + (
+    fixedSize + ifsSize + trafoSize) +
+    " but got " +
+    imgPtr
+  );
   const imgBytes = new Uint8ClampedArray(buffer, imgPtr, imgSize);
   if (typeof imgBytes.fill === "function") imgBytes.fill(0);
   // clear image
@@ -97,40 +97,40 @@ function init(d) {
       const tr = trafos[j];
       if (tr.kind === "Tr") {
         asm._setProj(
-        i,
-        j,
-        tr.prob,
-        tr.color[0] * 255,
-        tr.color[1] * 255,
-        tr.color[2] * 255,
-        tr.mat[0][0],
-        tr.mat[0][1],
-        tr.mat[0][2],
-        tr.mat[1][0],
-        tr.mat[1][1],
-        tr.mat[1][2],
-        tr.mat[2][0],
-        tr.mat[2][1],
-        tr.mat[2][2]);
-
+          i,
+          j,
+          tr.prob,
+          tr.color[0] * 255,
+          tr.color[1] * 255,
+          tr.color[2] * 255,
+          tr.mat[0][0],
+          tr.mat[0][1],
+          tr.mat[0][2],
+          tr.mat[1][0],
+          tr.mat[1][1],
+          tr.mat[1][2],
+          tr.mat[2][0],
+          tr.mat[2][1],
+          tr.mat[2][2]
+        );
       } else if (tr.kind === "Mt") {
         asm._setMoebius(
-        i,
-        j,
-        tr.prob,
-        tr.color[0] * 255,
-        tr.color[1] * 255,
-        tr.color[2] * 255,
-        tr.moebius.sign,
-        tr.moebius.ar,
-        tr.moebius.ai,
-        tr.moebius.br,
-        tr.moebius.bi,
-        tr.moebius.cr,
-        tr.moebius.ci,
-        tr.moebius.dr,
-        tr.moebius.di);
-
+          i,
+          j,
+          tr.prob,
+          tr.color[0] * 255,
+          tr.color[1] * 255,
+          tr.color[2] * 255,
+          tr.moebius.sign,
+          tr.moebius.ar,
+          tr.moebius.ai,
+          tr.moebius.br,
+          tr.moebius.bi,
+          tr.moebius.cr,
+          tr.moebius.ci,
+          tr.moebius.dr,
+          tr.moebius.di
+        );
       }
     }
   }
@@ -167,36 +167,36 @@ function next(d) {
     const t = new Uint8ClampedArray(imgTransfer);
     t.set(imgData.data);
     postMessage(
-    {
-      generation,
-      buffer: imgTransfer,
-      imgPtr: 0,
-      width,
-      height },
-
-    [imgTransfer]);
-
+      {
+        generation,
+        buffer: imgTransfer,
+        imgPtr: 0,
+        width,
+        height
+      },
+      [imgTransfer]
+    );
   } else if (typeof createImageBitmap === "function") {
     createImageBitmap(imgData).then(function (bmp) {
       postMessage(
-      {
-        generation,
-        img: bmp },
-
-      [bmp]);
-
+        {
+          generation,
+          img: bmp
+        },
+        [bmp]
+      );
     });
   } else {
     postMessage(
-    {
-      generation,
-      buffer,
-      imgPtr,
-      width,
-      height },
-
-    [buffer]);
-
+      {
+        generation,
+        buffer,
+        imgPtr,
+        width,
+        height
+      },
+      [buffer]
+    );
   }
 }
 
@@ -215,25 +215,25 @@ Module["asm"] = function (global, env, buffer) {
     b = b | 0;
     e = e | 0;
     let f = 0,
-    g = 0,
-    i = 0,
-    j = 0.0,
-    k = 0.0,
-    l = 0,
-    m = 0,
-    n = 0.0,
-    o = 0.0,
-    p = 0.0,
-    q = 0.0,
-    r = 0,
-    s = 0.0,
-    t = 0.0,
-    u = 0.0,
-    v = 0.0,
-    w = 0.0,
-    x = 0.0,
-    y = 0,
-    z = 0;
+      g = 0,
+      i = 0,
+      j = 0.0,
+      k = 0.0,
+      l = 0,
+      m = 0,
+      n = 0.0,
+      o = 0.0,
+      p = 0.0,
+      q = 0.0,
+      r = 0,
+      s = 0.0,
+      t = 0.0,
+      u = 0.0,
+      v = 0.0,
+      w = 0.0,
+      x = 0.0,
+      y = 0,
+      z = 0;
     if (!b) return;
     f = c[11] | 0;
     do {
@@ -303,8 +303,8 @@ Module["asm"] = function (global, env, buffer) {
                   break;
                 }
               default:
-                break b;}
-
+                break b;
+            }
             x = +h[i + 8 >> 3];
             z = 56 + (r * 56 | 0) + 24 | 0;
             y = 56 + (r * 56 | 0) + 32 | 0;
@@ -379,7 +379,7 @@ Module["asm"] = function (global, env, buffer) {
     p = +p;
     q = +q;
     let r = 0,
-    s = 0;
+      s = 0;
     a = 56 + (a * 56 | 0) + 52 | 0;
     s = c[(c[a >> 2] | 0) + (b << 2) >> 2] | 0;
     c[s + 4 >> 2] = 1;
@@ -424,7 +424,7 @@ Module["asm"] = function (global, env, buffer) {
     p = +p;
     q = +q;
     let r = 0,
-    s = 0;
+      s = 0;
     a = 56 + (a * 56 | 0) + 52 | 0;
     s = c[(c[a >> 2] | 0) + (b << 2) >> 2] | 0;
     c[s + 4 >> 2] = 0;
@@ -508,7 +508,7 @@ Module["asm"] = function (global, env, buffer) {
     _setIFS: fa,
     _real: da,
     _init: ea,
-    _setMoebius: ha };
-
+    _setMoebius: ha
+  };
 };
 //# sourceMappingURL=ifs.js.map
